@@ -1,0 +1,40 @@
+.dice4 circle {
+  fill: #F57C00;
+  transition: all .5s;
+  transform-origin: 25px 25px;
+}
+.dice4:hover circle {
+  transform: scale(1.1);
+}
+.dice5 g{
+  transition: all .5s;
+  transform-origin: 100px 100px;
+}
+.dice5:hover g {
+  transform: scale(1.2) rotate(90deg);
+}
+.patterntext {
+  font-size: 6rem;
+  font-weight: ;
+}
+.cls-1{fill:#ffe269;}
+.cls-2{fill:#fff;}
+.cls-3{fill:#fcf0c0;}
+
+@keyframes move {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+.pupil {
+  animation: move 2s infinite;
+}
+.svg-wrap:hover .pupil {
+  animation-play-state: paused;
+}
